@@ -1,0 +1,8 @@
+<!--pages/demo1/demo1.wxml-->
+
+<Tabs tabs="{{tabs}}" bindchangeitem="onChangeItem">
+  <view wx:if="{{tabs[0].isActive}}">0</view>
+  <view wx:if="{{tabs[1].isActive}}">1</view>
+  <view wx:if="{{tabs[2].isActive}}">2</view>
+  <view wx:if="{{tabs[3].isActive}}">3</view>
+</Tabs>

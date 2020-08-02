@@ -1,0 +1,11 @@
+/* components/Tabs/tabs.wxss */
+.tabs_flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.tabs_item_chosed {
+  padding: 2rpx;
+  border-bottom: 1px solid red;
+  color: red;
+}

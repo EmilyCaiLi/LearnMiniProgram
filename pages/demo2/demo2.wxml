@@ -1,0 +1,16 @@
+<!--pages/demo2/demo2.wxml-->
+<!-- 变量用 {{}} 包裹 -->
+<view>{{msg}}</view>
+<view>{{one}}</view>
+<view data-age="{{person.age}}">{{person.name}}</view>
+<checkbox checked="{{flag}}"></checkbox>
+<!-- 
+列表循环
+wx:for="{{list}}"
+wx:for-item=""
+wx:for-index=""
+wx:key="index"
+
+wx:key="*this" 普通的数组
+ -->
+<view wx:for="{{two}}" wx:for-item="item" wx:for-index="index" wx:key="{{item.id}}">{{item.id}}:{{item.name}}</view>

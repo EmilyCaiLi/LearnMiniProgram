@@ -1,0 +1,14 @@
+<!--components/Tabs/tabs.wxml-->
+<view>
+  <view class="tabs_flex">
+    <view class="tabs_item {{item.isActive?'tabs_item_chosed':''}}"
+      wx:for="{{tabs}}"
+      wx:key="{{id}}"
+      data-id="{{item.id}}"
+      bindtap='choseItem'
+      >
+      {{item.name}}
+    </view>
+  </view>
+  <slot></slot>
+</view>
